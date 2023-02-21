@@ -2,6 +2,8 @@
 // const express = require('express');
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
+const table = require('console.table')
+// const Connection = require('mysql2/typings/mysql/lib/Connection');
 
 // const PORT = process.env.PORT || 3001;
 // const app = express();
@@ -60,15 +62,36 @@ employeeApp = () => {
         case 'Update Employee Role':
           updateEmployeeRole();
           break;
+        case 'Exit':
+          connection.end();
+          console.log('Thank you. Goodbye.')
+          return;
+        default:
+          break;
       }
   })
 };
 
 // View All Departments
+viewAllDepartments = () => {
+  connection.query(`SELECT * FROM department ORDER BY department_id ASC;`, (err, res) => {
+    if (err) throw err;
+    console.table( res);
+    startApp();
+})
+};
 
 // View All Roles
+viewAllRoles = () => {
+  connection.query(`SELECT role.role_id, role.title, role.salary, department.department_name, department.department_id FROM role JOIN department ON role.department_id = department.department_id ORDER BY role.role_id ASC;`, (err, res) => {
+      if (err) throw err;
+      console.table('\n', res, '\n');
+      startApp();
+  })
+};
 
 // View All Employees
+
 
 // Add A Department
 

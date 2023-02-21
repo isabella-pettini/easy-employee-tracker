@@ -14,7 +14,7 @@ INSERT INTO roles (title, department_id, salary) VALUES ("Accountant, 3, 125000"
 INSERT INTO roles (title, department_id, salary) VALUES ("Legal Team Lead, 4, 250000");
 INSERT INTO roles (title, department_id, salary) VALUES ("Lawyer, 4, 190000");
 
-INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES ("Michael", "Scott", 1, 0);
+INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES ("Michael", "Scott", 1, NULL);
 INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES ("Jim", "Halpert", 1, 1);
 INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES ("Dwight", "Schrute", 2, 0);
 INSERT INTO employee (first_name, last_name, roles_id, manager_id) VALUES ("Andy", "Bernard", 2, 3);
