@@ -1,23 +1,35 @@
-# easy-employee-tracker
+# Easy Employee Tracker
 
-AS A business owner
-I WANT to be able to view and manage the departments, roles, and employees in my company
-SO THAT I can organize and plan my business
+## Description
+This easy employee tracker will allow you to manage your employees with an SQL database. You will be able to view tables with data on your employees, managers, departments, roles and salaries. Updating and adding new employees, roles and departments is as simple as selecting what you want to do and answering the prompts provided.
 
-GIVEN a command-line application that accepts user input
-WHEN I start the application
-THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-WHEN I choose to view all departments
-THEN I am presented with a formatted table showing department names and department ids
-WHEN I choose to view all roles
-THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-WHEN I choose to view all employees
-THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-WHEN I choose to add a department
-THEN I am prompted to enter the name of the department and that department is added to the database
-WHEN I choose to add a role
-THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-WHEN I choose to add an employee
-THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-WHEN I choose to update an employee role
-THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+## Table Of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+Git clone this repo and run an npm install.
+
+## Usage
+Make sure you have SQL downloaded to your local machine. Run schema.sql then seed.sql. Then run source db/schema.sql and source db/seeds.sql. Run node server.js and answer the prompts.
+
+## License
+This project is covered under the MIT license. Please refer to this link to read the license, permissions, conditions and limitations.
+[License: MIT](https://choosealicense.com/licenses/mit/)
+
+## Contributing
+N/A
+
+## Tests
+N/A
+
+## Questions
+Please reach me by GitHub or Email below with any additional questions about this project:
+
+GitHub: https://github.com/isabella-pettini
+
+Email:  isabellapierce93@gmail.com
